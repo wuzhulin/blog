@@ -7,8 +7,6 @@
     <list default="true" id="dfc2461e-0838-4b67-969b-401c252cdc11" name="Changes" comment="一次性提交所有的文件">
       <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/c7b1e958-1bfa-441d-a953-c6f1a8fe5894/entities/entities.dat" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c7b1e958-1bfa-441d-a953-c6f1a8fe5894/entities/entities.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c7b1e958-1bfa-441d-a953-c6f1a8fe5894/entities/entities.dat.values" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c7b1e958-1bfa-441d-a953-c6f1a8fe5894/entities/entities.dat.values" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c7b1e958-1bfa-441d-a953-c6f1a8fe5894/entities/entities.dat.values.s" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c7b1e958-1bfa-441d-a953-c6f1a8fe5894/entities/entities.dat.values.s" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/c7b1e958-1bfa-441d-a953-c6f1a8fe5894/entities/entities.dat_i" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c7b1e958-1bfa-441d-a953-c6f1a8fe5894/entities/entities.dat_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -229,7 +227,7 @@
       <workItem from="1645679091915" duration="9000" />
       <workItem from="1646031434661" duration="2524000" />
       <workItem from="1646047821698" duration="1225000" />
-      <workItem from="1646049125432" duration="829000" />
+      <workItem from="1646049125432" duration="1487000" />
     </task>
     <task id="LOCAL-00001" summary="一次性提交所有的文件">
       <created>1646033343040</created>
