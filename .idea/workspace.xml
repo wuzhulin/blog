@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="dfc2461e-0838-4b67-969b-401c252cdc11" name="Changes" comment="一次性提交所有的文件">
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c7b1e958-1bfa-441d-a953-c6f1a8fe5894/entities/entities.dat" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c7b1e958-1bfa-441d-a953-c6f1a8fe5894/entities/entities.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c7b1e958-1bfa-441d-a953-c6f1a8fe5894/entities/entities.dat.values" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c7b1e958-1bfa-441d-a953-c6f1a8fe5894/entities/entities.dat.values" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c7b1e958-1bfa-441d-a953-c6f1a8fe5894/entities/entities.dat.values.s" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c7b1e958-1bfa-441d-a953-c6f1a8fe5894/entities/entities.dat.values.s" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c7b1e958-1bfa-441d-a953-c6f1a8fe5894/entities/entities.dat_i" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c7b1e958-1bfa-441d-a953-c6f1a8fe5894/entities/entities.dat_i" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/BlogApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/config/MybatisPlusConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/config/WebMvcConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/controller/ArticleController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/controller/LoginController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/controller/TagController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/controller/TestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/controller/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/dao/ArticleBodyMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/dao/ArticleMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/dao/CategoryMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/dao/SysUserMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/dao/TagMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/dao/TagMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/entity/Article.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/entity/ArticleBody.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/entity/Category.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/entity/SysUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/entity/Tag.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/handler/AllExceptionHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/handler/LoginInterceptor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/service/ArticleBodyService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/service/ArticleService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/service/CategoryService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/service/LoginService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/service/SysUserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/service/TagService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/service/impl/ArticleBodyServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/service/impl/ArticleServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/service/impl/CategoryServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/service/impl/LoginServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/service/impl/SysUserServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/service/impl/TagServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/util/ErrorCode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/util/JWTUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/util/UserThreadLocal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/vo/ArticleBodyVo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/vo/ArticleVo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/vo/CategoryVo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/vo/LoginUserVo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/vo/Result.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/vo/TagVo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/vo/dos/Articles.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/vo/param/LoginParam$test1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/vo/param/LoginParam$test2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/vo/param/LoginParam.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/vo/param/PageParam.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bolg-api/target/test-classes/Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bolg-api/target/test-classes/test.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="C:\Program Files\Apache Software Foundation\apache-maven-3.8.2\maven_repo" />
+        <option name="mavenHome" value="C:/Program Files/Apache Software Foundation/apache-maven-3.8.2" />
+        <option name="userSettingsFile" value="C:\Program Files\Apache Software Foundation\apache-maven-3.8.2\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="252yyb8EZxIg1Akdkr9nUNPKNSg" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="flattenModules" value="true" />
+    <option name="foldersAlwaysOnTop" value="false" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+    <option name="sortByType" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ChangesTree.GroupingKeys" value="module&#10;directory" />
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/blog-app" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.wuzhulin.vo" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.wuzhulin.vo" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.BlogApp">
+    <configuration name="JWTUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wuzhulin.util.JWTUtils" />
+      <module name="bolg-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wuzhulin.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ArticleMapperTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bolg-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wuzhulin.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.wuzhulin.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.wuzhulin.dao.ArticleMapperTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bolg-api" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="test" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BlogApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="bolg-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wuzhulin.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wuzhulin.BlogApp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.BlogApp" />
+        <item itemvalue="JUnit.test.test" />
+        <item itemvalue="Application.JWTUtils" />
+        <item itemvalue="JUnit.ArticleMapperTest.test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dfc2461e-0838-4b67-969b-401c252cdc11" name="Changes" comment="" />
+      <created>1644739731824</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1644739731824</updated>
+      <workItem from="1644739733158" duration="2882000" />
+      <workItem from="1644764339535" duration="4885000" />
+      <workItem from="1644817867537" duration="7673000" />
+      <workItem from="1644894913542" duration="16890000" />
+      <workItem from="1644937298434" duration="775000" />
+      <workItem from="1644978140810" duration="7034000" />
+      <workItem from="1645010143902" duration="7052000" />
+      <workItem from="1645082975220" duration="7913000" />
+      <workItem from="1645183856630" duration="5768000" />
+      <workItem from="1645247743790" duration="10151000" />
+      <workItem from="1645356215319" duration="2109000" />
+      <workItem from="1645424660582" duration="5620000" />
+      <workItem from="1645450625081" duration="472000" />
+      <workItem from="1645543742713" duration="617000" />
+      <workItem from="1645594494809" duration="5000" />
+      <workItem from="1645614805305" duration="2169000" />
+      <workItem from="1645679091915" duration="9000" />
+      <workItem from="1646031434661" duration="2524000" />
+      <workItem from="1646047821698" duration="1225000" />
+      <workItem from="1646049125432" duration="829000" />
+    </task>
+    <task id="LOCAL-00001" summary="一次性提交所有的文件">
+      <created>1646033343040</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1646033343040</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="一次性提交所有的文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="一次性提交所有的文件" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/bolg-api/src/test/java/test.java</url>
+          <line>192</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/bolg-api/src/main/java/com/wuzhulin/service/impl/ArticleServiceImpl.java</url>
+          <line>81</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/bolg-api/src/test/java/test.java</url>
+          <line>375</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
