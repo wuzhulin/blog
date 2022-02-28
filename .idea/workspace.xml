@@ -4,62 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dfc2461e-0838-4b67-969b-401c252cdc11" name="Changes" comment="一次性提交所有的文件">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c7b1e958-1bfa-441d-a953-c6f1a8fe5894/entities/entities.dat" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c7b1e958-1bfa-441d-a953-c6f1a8fe5894/entities/entities.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c7b1e958-1bfa-441d-a953-c6f1a8fe5894/entities/entities.dat_i" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c7b1e958-1bfa-441d-a953-c6f1a8fe5894/entities/entities.dat_i" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="dfc2461e-0838-4b67-969b-401c252cdc11" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/bolg-api/src/main/java/com/wuzhulin/service/ThreadService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/BlogApp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/config/MybatisPlusConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/config/WebMvcConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/controller/ArticleController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/controller/LoginController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/controller/TagController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/controller/TestController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/controller/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/dao/ArticleBodyMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/dao/ArticleMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/dao/CategoryMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/dao/SysUserMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/dao/TagMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/dao/TagMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/entity/Article.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/entity/ArticleBody.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/entity/Category.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/entity/SysUser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/entity/Tag.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/handler/AllExceptionHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/handler/LoginInterceptor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/service/ArticleBodyService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/service/ArticleService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/service/CategoryService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/service/LoginService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/service/SysUserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/service/TagService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/service/impl/ArticleBodyServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/service/impl/ArticleServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/service/impl/CategoryServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/service/impl/LoginServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/service/impl/SysUserServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/service/impl/TagServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/util/ErrorCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/util/JWTUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/util/UserThreadLocal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/vo/ArticleBodyVo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/vo/ArticleVo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/vo/CategoryVo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/vo/LoginUserVo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/vo/Result.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/vo/TagVo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/vo/dos/Articles.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/vo/param/LoginParam$test1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/vo/param/LoginParam$test2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/vo/param/LoginParam.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bolg-api/target/classes/com/wuzhulin/vo/param/PageParam.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bolg-api/target/test-classes/Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bolg-api/target/test-classes/test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bolg-api/src/main/java/com/wuzhulin/service/impl/ArticleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/bolg-api/src/main/java/com/wuzhulin/service/impl/ArticleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bolg-api/src/main/java/com/wuzhulin/vo/ArticleVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/bolg-api/src/main/java/com/wuzhulin/vo/ArticleVo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,6 +70,7 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -228,6 +178,7 @@
       <workItem from="1646031434661" duration="2524000" />
       <workItem from="1646047821698" duration="1225000" />
       <workItem from="1646049125432" duration="1487000" />
+      <workItem from="1646051873267" duration="1304000" />
     </task>
     <task id="LOCAL-00001" summary="一次性提交所有的文件">
       <created>1646033343040</created>
@@ -236,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646033343040</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="一次性提交所有的文件">
+      <created>1646052133997</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1646052133997</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -255,14 +213,14 @@
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/bolg-api/src/main/java/com/wuzhulin/service/impl/ArticleServiceImpl.java</url>
-          <line>81</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/bolg-api/src/test/java/test.java</url>
           <line>375</line>
           <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/bolg-api/src/main/java/com/wuzhulin/controller/ArticleController.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

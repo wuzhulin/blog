@@ -33,6 +33,8 @@ public class ArticleServiceImpl implements ArticleService {
     private CategoryService categoryService;
     @Autowired
     private ArticleBodyService articleBodyService;
+    @Autowired
+    private ThreadService threadService;
 
     @Override
     public Result listArticle(PageParam pageVo) {
@@ -80,6 +82,7 @@ public class ArticleServiceImpl implements ArticleService {
     @Override
     public Result findArticleById(Long articleId) {
         Article article = articleMapper.selectById(articleId);
+        threadService.updateViewCount(articleMapper,article);
         ArticleVo articleVo = copy(article);
         //获取文章的类别信息
         CategoryVo categoryVo = categoryService.findCategoryById(article.getCategoryId());
