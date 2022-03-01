@@ -4,11 +4,14 @@ import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.wuzhulin.dao.CommentMapper;
 import com.wuzhulin.entity.Comment;
 import com.wuzhulin.entity.SysUser;
+import com.wuzhulin.service.ArticleService;
 import com.wuzhulin.service.CommentService;
 import com.wuzhulin.service.SysUserService;
+import com.wuzhulin.util.UserThreadLocal;
 import com.wuzhulin.vo.CommentVo;
 import com.wuzhulin.vo.Result;
 import com.wuzhulin.vo.UserVo;
+import com.wuzhulin.vo.param.CommentParam;
 import org.joda.time.DateTime;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,6 +36,27 @@ public class CommentServiceImpl implements CommentService {
         List<Comment> commentList = commentMapper.selectList(qw);
         List<CommentVo> commentVoList = copyList(commentList);
         return Result.success(commentVoList);
+    }
+
+    @Override
+    public Result insertComment(CommentParam commentParam) {
+        SysUser sysUser = UserThreadLocal.get();
+        Comment comment = new Comment();
+        BeanUtils.copyProperties(commentParam,comment);
+        comment.setParentId(commentParam.getParent() == null ? 0: commentParam.getParent());
+        comment.setToUid(commentParam.getToUserId() == null ? 0 : commentParam.getToUserId());
+        //设置时间
+        comment.setCreateDate(System.currentTimeMillis());
+        //设置评论等级
+        if(commentParam.getParent() == null || commentParam.getParent() == 0) {
+            comment.setLevel(1);
+        }else {
+            comment.setLevel(2);
+        }
+        //设置id
+        comment.setAuthorId(sysUser.getId());
+        commentMapper.insert(comment);
+        return Result.success(null);
     }
 
     public List<CommentVo> copyList(List<Comment> commentList) {
