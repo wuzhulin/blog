@@ -8,6 +8,7 @@ import com.wuzhulin.service.SysUserService;
 import com.wuzhulin.util.ErrorCode;
 import com.wuzhulin.vo.LoginUserVo;
 import com.wuzhulin.vo.Result;
+import com.wuzhulin.vo.UserVo;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -63,5 +64,13 @@ public class SysUserServiceImpl implements SysUserService {
     @Override
     public void save(SysUser sysUser) {
         sysUserMapper.insert(sysUser);
+    }
+
+    @Override
+    public UserVo findUserVoById(Long authorId) {
+        SysUser author = findUserById(authorId);
+        UserVo userVo = new UserVo();
+        BeanUtils.copyProperties(author,userVo);
+        return userVo;
     }
 }

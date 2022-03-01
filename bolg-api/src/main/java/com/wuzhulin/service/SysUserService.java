@@ -2,6 +2,7 @@ package com.wuzhulin.service;
 
 import com.wuzhulin.entity.SysUser;
 import com.wuzhulin.vo.Result;
+import com.wuzhulin.vo.UserVo;
 
 import java.util.List;
 
@@ -15,4 +16,6 @@ public interface SysUserService {
     SysUser findUserByAccount(String account);
 
     void save(SysUser sysUser);
+
+    UserVo findUserVoById(Long authorId);
 }
