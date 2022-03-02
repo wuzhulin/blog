@@ -8,8 +8,10 @@ import com.wuzhulin.dao.SysUserMapper;
 import com.wuzhulin.entity.Article;
 import com.wuzhulin.entity.SysUser;
 import com.wuzhulin.service.*;
+import com.wuzhulin.util.UserThreadLocal;
 import com.wuzhulin.vo.*;
 import com.wuzhulin.vo.dos.Articles;
+import com.wuzhulin.vo.param.ArticleParam;
 import com.wuzhulin.vo.param.PageParam;
 import org.joda.time.DateTime;
 import org.springframework.beans.BeanUtils;
@@ -91,6 +93,29 @@ public class ArticleServiceImpl implements ArticleService {
         ArticleBodyVo articleBodyVo = articleBodyService.findByArticleBody(article.getBodyId());
         articleVo.setBody(articleBodyVo);
         return Result.success(articleVo);
+    }
+
+    @Override
+    public Result insertArticle(ArticleParam articleParam) {
+        SysUser sysUser = UserThreadLocal.get();
+        Article article = new Article();
+        BeanUtils.copyProperties(articleParam,article);
+        //设置文章创建时间
+        article.setCreateDate(System.currentTimeMillis());
+        //初始化阅读量和评论数为0
+        article.setViewCounts(0);
+        article.setCommentCounts(0);
+        //将文章内容插入body表单中
+        articleBodyService.insertBody(articleParam.getBody(),articleParam.getId());
+        Long bodyId = articleBodyService.findByArticleBodyId(article.getId());
+        article.setBodyId(bodyId);
+        //设置作者id
+        article.setAuthorId(sysUser.getId());
+
+        //更新标签
+        if(articleParam.getTags() != null && !articleParam.getTags().isEmpty()) {
+            tagService.insertTags(articleParam.getTags());
+        }
     }
 
     private List<ArticleVo> copyList(List<Article> articleList) {

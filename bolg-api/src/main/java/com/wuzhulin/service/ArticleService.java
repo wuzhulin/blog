@@ -1,6 +1,7 @@
 package com.wuzhulin.service;
 
 import com.wuzhulin.vo.Result;
+import com.wuzhulin.vo.param.ArticleParam;
 import com.wuzhulin.vo.param.PageParam;
 
 public interface ArticleService {
@@ -13,4 +14,6 @@ public interface ArticleService {
     Result findArticles();
 
     Result findArticleById(Long articleId);
+
+    Result insertArticle(ArticleParam articleParam);
 }

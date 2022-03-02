@@ -2,6 +2,7 @@ package com.wuzhulin.controller;
 
 import com.wuzhulin.service.ArticleService;
 import com.wuzhulin.vo.Result;
+import com.wuzhulin.vo.param.ArticleParam;
 import com.wuzhulin.vo.param.PageParam;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -56,5 +57,13 @@ public class ArticleController {
     @PostMapping("view/{id}")
     public Result view(@PathVariable("id") Long articleId) {
         return articleService.findArticleById(articleId);
+    }
+
+    /**
+     * 发布文章
+     */
+    @PostMapping("publish")
+    public Result Pubilsh(@RequestBody ArticleParam articleParam) {
+        return articleService.insertArticle(articleParam);
     }
 }

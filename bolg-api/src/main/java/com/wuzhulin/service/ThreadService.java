@@ -18,7 +18,7 @@ public class ThreadService {
         qw.eq(Article::getViewCounts,article.getViewCounts());
         articleMapper.update(article1,qw);
         try {
-            // 睡眠5秒
+            // 睡眠5秒,不影响主线程的使用
             Thread.sleep(5);
         } catch (InterruptedException e) {
             e.printStackTrace();

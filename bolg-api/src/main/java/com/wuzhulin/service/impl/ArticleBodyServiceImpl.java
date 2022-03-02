@@ -5,6 +5,7 @@ import com.wuzhulin.dao.ArticleBodyMapper;
 import com.wuzhulin.entity.ArticleBody;
 import com.wuzhulin.service.ArticleBodyService;
 import com.wuzhulin.vo.ArticleBodyVo;
+import com.wuzhulin.vo.param.ArticleBodyParam;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -19,5 +20,19 @@ public class ArticleBodyServiceImpl implements ArticleBodyService {
         ArticleBodyVo articleBodyVo = new ArticleBodyVo();
         BeanUtils.copyProperties(articleBody,articleBodyVo);
         return articleBodyVo;
+    }
+
+    @Override
+    public void insertBody(ArticleBodyParam body , Long id) {
+        ArticleBody articleBody = new ArticleBody();
+        BeanUtils.copyProperties(body,articleBody);
+        articleBody.setArticleId(id);
+        articleBodyMapper.insert(articleBody);
+    }
+
+    @Override
+    public Long findByArticleBodyId(Long id) {
+        ArticleBody articleBody = articleBodyMapper.selectById(id);
+        return articleBody.getId();
     }
 }
