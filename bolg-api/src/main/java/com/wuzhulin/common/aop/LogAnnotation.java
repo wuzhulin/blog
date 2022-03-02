@@ -9,4 +9,5 @@ public @interface LogAnnotation {
     String module() default "";
 
     String operator() default "";
+
 }
