@@ -11,6 +11,4 @@ public interface TagService {
     List<TagVo> findHot(int limit);
 
     Result getAll();
-
-    void insertTags(List<TagVo> tags);
 }

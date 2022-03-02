@@ -23,10 +23,7 @@ public class ArticleBodyServiceImpl implements ArticleBodyService {
     }
 
     @Override
-    public void insertBody(ArticleBodyParam body , Long id) {
-        ArticleBody articleBody = new ArticleBody();
-        BeanUtils.copyProperties(body,articleBody);
-        articleBody.setArticleId(id);
+    public void insertBody(ArticleBody articleBody) {
         articleBodyMapper.insert(articleBody);
     }
 

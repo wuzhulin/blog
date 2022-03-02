@@ -6,22 +6,29 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.wuzhulin.dao.ArticleMapper;
 import com.wuzhulin.dao.SysUserMapper;
 import com.wuzhulin.entity.Article;
+import com.wuzhulin.entity.ArticleBody;
+import com.wuzhulin.entity.ArticleTag;
 import com.wuzhulin.entity.SysUser;
 import com.wuzhulin.service.*;
 import com.wuzhulin.util.UserThreadLocal;
 import com.wuzhulin.vo.*;
 import com.wuzhulin.vo.dos.Articles;
+import com.wuzhulin.vo.param.ArticleBodyParam;
 import com.wuzhulin.vo.param.ArticleParam;
 import com.wuzhulin.vo.param.PageParam;
 import org.joda.time.DateTime;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 @Service
+@Transactional
 public class ArticleServiceImpl implements ArticleService {
 
     @Autowired(required = false)
@@ -37,6 +44,8 @@ public class ArticleServiceImpl implements ArticleService {
     private ArticleBodyService articleBodyService;
     @Autowired
     private ThreadService threadService;
+    @Autowired
+    private ArticleTagService articleTagService;
 
     @Override
     public Result listArticle(PageParam pageVo) {
@@ -105,24 +114,42 @@ public class ArticleServiceImpl implements ArticleService {
         //初始化阅读量和评论数为0
         article.setViewCounts(0);
         article.setCommentCounts(0);
-        //将文章内容插入body表单中
-        articleBodyService.insertBody(articleParam.getBody(),articleParam.getId());
-        Long bodyId = articleBodyService.findByArticleBodyId(article.getId());
-        article.setBodyId(bodyId);
         //设置作者id
         article.setAuthorId(sysUser.getId());
+        articleMapper.insert(article);
+        //设置文章是否置顶
+        article.setWeight(Article.Article_Common);
+        //设置文章类别
+        article.setCategoryId(articleParam.getCategory().getId());
+        //将文章内容插入body表单中
+        ArticleBody body = new ArticleBody();
+        body.setContent(articleParam.getBody().getContent());
+        body.setContentHtml(articleParam.getBody().getContentHtml());
+        body.setArticleId(article.getId());
+        articleBodyService.insertBody(body);
+        article.setBodyId(body.getId());
+        articleMapper.updateById(article);
 
-        //更新标签
-        if(articleParam.getTags() != null && !articleParam.getTags().isEmpty()) {
-            tagService.insertTags(articleParam.getTags());
+        //更新文章绑定标签表
+        List<TagVo> tags = articleParam.getTags();
+        if (tags != null && !tags.isEmpty()) {
+            for (TagVo tag : tags) {
+                ArticleTag articleTag = new ArticleTag();
+                articleTag.setTagId(tag.getId());
+                articleTag.setArticleId(article.getId());
+                articleTagService.insert(articleTag);
+            }
         }
+        Map<String,String> map = new HashMap<>();
+        map.put("id",article.getId().toString());
+        return Result.success(map);
     }
 
+
     private List<ArticleVo> copyList(List<Article> articleList) {
-        List<ArticleVo> collect = articleList.stream()
+        return articleList.stream()
                 .map(this::copy)
                 .collect(Collectors.toList());
-        return collect;
     }
 
     private ArticleVo copy(Article article) {
