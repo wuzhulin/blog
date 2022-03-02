@@ -14,6 +14,12 @@ spring:
   redis:
     port: 6379
     host: localhost
+  servlet:
+    multipart:
+      ## 单个文件的最大值
+      max-file-size: 2MB
+      ## 上传文件总的最大值
+      max-request-size: 20MB
 
 #mybaits
 mybatis-plus:
@@ -23,3 +29,6 @@ mybatis-plus:
     db-config:
       table-prefix: ms_
 
+qiniu:
+  accessKey: 3aCTNrbSZOdvA7DUq3cbcUwx_sTFr-_1eLUJz0pq
+  accessSecretKey: BJTGMWRzoQDbuDNRVYX70O_cJ7RwNEngV8ewrkFe

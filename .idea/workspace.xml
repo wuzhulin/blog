@@ -4,11 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dfc2461e-0838-4b67-969b-401c252cdc11" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/bolg-api/src/main/java/com/wuzhulin/service/ThreadService.java" afterDir="false" />
+    <list default="true" id="dfc2461e-0838-4b67-969b-401c252cdc11" name="Changes" comment="一次性提交所有的文件">
+      <change afterPath="$PROJECT_DIR$/bolg-api/src/main/java/com/wuzhulin/controller/UploadController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bolg-api/src/main/java/com/wuzhulin/util/QiniuUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c7b1e958-1bfa-441d-a953-c6f1a8fe5894/entities/entities.dat" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c7b1e958-1bfa-441d-a953-c6f1a8fe5894/entities/entities.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c7b1e958-1bfa-441d-a953-c6f1a8fe5894/entities/entities.dat.values" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c7b1e958-1bfa-441d-a953-c6f1a8fe5894/entities/entities.dat.values" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c7b1e958-1bfa-441d-a953-c6f1a8fe5894/entities/entities.dat.values.s" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c7b1e958-1bfa-441d-a953-c6f1a8fe5894/entities/entities.dat.values.s" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c7b1e958-1bfa-441d-a953-c6f1a8fe5894/entities/entities.dat_i" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c7b1e958-1bfa-441d-a953-c6f1a8fe5894/entities/entities.dat_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bolg-api/src/main/java/com/wuzhulin/service/impl/ArticleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/bolg-api/src/main/java/com/wuzhulin/service/impl/ArticleServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bolg-api/src/main/java/com/wuzhulin/vo/ArticleVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/bolg-api/src/main/java/com/wuzhulin/vo/ArticleVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bolg-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bolg-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bolg-api/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/bolg-api/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +24,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -82,6 +88,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.wuzhulin.vo.param" />
       <recent name="com.wuzhulin.vo" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -91,6 +98,19 @@
   <component name="RunManager" selected="Spring Boot.BlogApp">
     <configuration name="JWTUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.wuzhulin.util.JWTUtils" />
+      <module name="bolg-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wuzhulin.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UploadDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wuzhulin.util.UploadDemo" />
       <module name="bolg-api" />
       <extension name="coverage">
         <pattern>
@@ -144,6 +164,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.BlogApp" />
+        <item itemvalue="Application.UploadDemo" />
         <item itemvalue="JUnit.test.test" />
         <item itemvalue="Application.JWTUtils" />
         <item itemvalue="JUnit.ArticleMapperTest.test" />
@@ -151,6 +172,9 @@
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpringBeansView">
+    <option name="beanDetailsProportion" value="0.3" />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="dfc2461e-0838-4b67-969b-401c252cdc11" name="Changes" comment="" />
@@ -178,7 +202,11 @@
       <workItem from="1646031434661" duration="2524000" />
       <workItem from="1646047821698" duration="1225000" />
       <workItem from="1646049125432" duration="1487000" />
-      <workItem from="1646051873267" duration="1304000" />
+      <workItem from="1646051873267" duration="2525000" />
+      <workItem from="1646105240914" duration="990000" />
+      <workItem from="1646137302154" duration="4657000" />
+      <workItem from="1646199403106" duration="819000" />
+      <workItem from="1646210309280" duration="7496000" />
     </task>
     <task id="LOCAL-00001" summary="一次性提交所有的文件">
       <created>1646033343040</created>
@@ -194,11 +222,37 @@
       <option name="project" value="LOCAL" />
       <updated>1646052133997</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="一次性提交所有的文件">
+      <created>1646053366189</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1646053366189</updated>
+    </task>
+    <task id="LOCAL-00004" summary="一次性提交所有的文件">
+      <created>1646199525707</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1646199525707</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="一次性提交所有的文件" />
@@ -216,11 +270,6 @@
           <url>file://$PROJECT_DIR$/bolg-api/src/test/java/test.java</url>
           <line>375</line>
           <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/bolg-api/src/main/java/com/wuzhulin/controller/ArticleController.java</url>
-          <line>40</line>
-          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
