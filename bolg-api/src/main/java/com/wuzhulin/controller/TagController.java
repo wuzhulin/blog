@@ -4,10 +4,7 @@ import com.wuzhulin.service.TagService;
 import com.wuzhulin.vo.Result;
 import com.wuzhulin.vo.TagVo;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -27,5 +24,15 @@ public class TagController {
     @GetMapping
     public Result getAll() {
         return tagService.getAll();
+    }
+
+    @GetMapping("detail")
+    public Result getTagAll() {
+        return tagService.getTagAll();
+    }
+
+    @GetMapping("detail/{id}")
+    public Result getTagById(@PathVariable Long id) {
+        return tagService.getTagById(id);
     }
 }

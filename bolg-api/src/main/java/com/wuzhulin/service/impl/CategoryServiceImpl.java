@@ -15,7 +15,7 @@ import java.util.stream.Collectors;
 
 @Service
 public class CategoryServiceImpl implements CategoryService {
-    @Autowired
+    @Autowired(required = false)
     private CategoryMapper categoryMapper;
 
     @Override
@@ -27,10 +27,22 @@ public class CategoryServiceImpl implements CategoryService {
     }
 
     @Override
-    public Result getAllCategory() {
+    public Result getAllCategoryVO() {
         List<Category> categoryList = categoryMapper.selectList(null);
         List<CategoryVo> categoryVoList = copyList(categoryList);
         return Result.success(categoryVoList);
+    }
+
+    @Override
+    public Result getAllCategory() {
+        List<Category> categoryList = categoryMapper.selectList(null);
+        return Result.success(categoryList);
+    }
+
+    @Override
+    public Result getCategoryById(Long id) {
+        Category category = categoryMapper.selectById(id);
+        return Result.success(category);
     }
 
     private List<CategoryVo> copyList(List<Category> categoryList) {

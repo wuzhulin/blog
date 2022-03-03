@@ -44,6 +44,18 @@ public class TagServiceImpl implements TagService {
         return Result.success(tagVoList);
     }
 
+    @Override
+    public Result getTagAll() {
+        List<Tag> tagList = tagMapper.selectList(null);
+        return Result.success(tagList);
+    }
+
+    @Override
+    public Result getTagById(Long id) {
+        Tag tag = tagMapper.selectById(id);
+        return Result.success(tag);
+    }
+
     private List<TagVo> copyList(List<Tag> tagList) {
         List<TagVo> collect = tagList.stream()
                 .map(this::copy)
