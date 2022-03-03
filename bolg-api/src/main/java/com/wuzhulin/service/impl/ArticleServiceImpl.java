@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.wuzhulin.dao.ArticleMapper;
+import com.wuzhulin.dao.ArticleTagMapper;
 import com.wuzhulin.dao.SysUserMapper;
 import com.wuzhulin.entity.Article;
 import com.wuzhulin.entity.ArticleBody;
@@ -22,6 +23,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -46,12 +48,30 @@ public class ArticleServiceImpl implements ArticleService {
     private ThreadService threadService;
     @Autowired
     private ArticleTagService articleTagService;
+    @Autowired
+    private ArticleTagMapper articleTagMapper;
 
-    @Override
+    /*@Override
     public Result listArticle(PageParam pageVo) {
         //分页查询文章
         Page<Article> page = new Page<>(pageVo.getPage(), pageVo.getPageSize());
         LambdaQueryWrapper<Article> qw = new LambdaQueryWrapper();
+        if (pageVo.getCategoryId() != null) {
+            qw.eq(Article::getCategoryId, pageVo.getCategoryId());
+        }
+        List<Long> articleIdList = new ArrayList<>();
+        if (pageVo.getTagId() != null) {
+            LambdaQueryWrapper<ArticleTag> tqw = new LambdaQueryWrapper<>();
+            tqw.eq(ArticleTag::getTagId,pageVo.getTagId());
+            List<ArticleTag> articleTags = articleTagMapper.selectList(tqw);
+            for (ArticleTag articleTag : articleTags) {
+                articleIdList.add(articleTag.getArticleId());
+            }
+            if (articleIdList.size() > 0) {
+                qw.in(Article::getId,articleIdList);
+            }
+        }
+
         //按照置顶和创建时间排序
         qw.orderByDesc(Article::getWeight,Article::getCreateDate);
         IPage<Article> articleIPage = articleMapper.selectPage(page,qw);
@@ -60,6 +80,13 @@ public class ArticleServiceImpl implements ArticleService {
         //将article转成articleVo类型
         List<ArticleVo> articleVoList = copyList(articleList);
         return Result.success(articleVoList);
+    }*/
+
+    @Override
+    public Result listArticle(PageParam pageVo) {
+        Page<Article> page = new Page<>(pageVo.getPage(), pageVo.getPageSize());
+        IPage<Article> articleIPage = articleMapper.listArticle(page,pageVo.getCategoryId(),pageVo.getTagId(),pageVo.getYear(),pageVo.getMonth());
+        return Result.success(copyList(articleIPage.getRecords()));
     }
 
     @Override

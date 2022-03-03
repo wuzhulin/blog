@@ -22,9 +22,10 @@ public class UploadController {
     public Result upload(@RequestParam("image") MultipartFile file) {
         String fileName = UUID.randomUUID().toString() + "." + StringUtils.substringAfterLast(file.getOriginalFilename(), ".");
         boolean upload = qiniuUtils.upload(file, fileName);
-        if(upload) {
+        if (upload) {
             return Result.success(QiniuUtils.url + fileName);
+        }else {
+            return Result.fail(20001,"上传失败");
         }
-        return Result.fail(20001,"上传失败！");
     }
 }
