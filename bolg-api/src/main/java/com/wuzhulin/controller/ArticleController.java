@@ -1,5 +1,6 @@
 package com.wuzhulin.controller;
 
+import com.wuzhulin.common.aop.Cache;
 import com.wuzhulin.common.aop.LogAnnotation;
 import com.wuzhulin.service.ArticleService;
 import com.wuzhulin.vo.Result;
@@ -22,6 +23,7 @@ public class ArticleController {
      */
     @PostMapping
     @LogAnnotation(module = "文章",operator = "查询文章列表")
+    @Cache
     public Result listArticle(@RequestBody PageParam pageVo) {
         return articleService.listArticle(pageVo);
     }

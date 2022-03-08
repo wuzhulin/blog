@@ -8,7 +8,7 @@ spring:
   #数据库
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/blog?useUnicode=true&characterEncoding=UTF-8&serverTimeZone=UTC
+    url: jdbc:mysql://101.201.197.42:3306/blog?useUnicode=true&characterEncoding=UTF-8&serverTimeZone=UTC
     username: root
     password: a1244368847
   redis:
