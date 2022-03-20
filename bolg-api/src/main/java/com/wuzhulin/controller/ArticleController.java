@@ -23,7 +23,7 @@ public class ArticleController {
      */
     @PostMapping
     @LogAnnotation(module = "文章",operator = "查询文章列表")
-    @Cache
+    @Cache(name = "articleList")
     public Result listArticle(@RequestBody PageParam pageVo) {
         return articleService.listArticle(pageVo);
     }

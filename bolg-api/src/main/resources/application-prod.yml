@@ -1,0 +1,34 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: bolg
+
+  #数据库
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://172.17.0.2:3307/blog?useUnicode=true&characterEncoding=UTF-8&serverTimeZone=UTC
+    username: root
+    password: 123456
+  redis:
+    port: 6379
+    host: 172.17.0.3
+  servlet:
+    multipart:
+      ## 单个文件的最大值
+      max-file-size: 2MB
+      ## 上传文件总的最大值
+      max-request-size: 20MB
+
+#mybaits
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      table-prefix: ms_
+
+qiniu:
+  accessKey: 3aCTNrbSZOdvA7DUq3cbcUwx_sTFr-_1eLUJz0pq
+  accessSecretKey: BJTGMWRzoQDbuDNRVYX70O_cJ7RwNEngV8ewrkFe
